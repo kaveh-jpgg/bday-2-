@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <title>Hey, come here 👀</title>
+
+    <!-- Oswald Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --popup-bg: rgba(235,206,78,0.92);
+            --accent: #daa90a;
+        }
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: "Oswald", sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            /* background image */
+            background-image: url("https://i.pinimg.com/1200x/bf/30/e3/bf30e31f123dd07ceb6b49e5ed80c9eb.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* small overlay so content is readable on busy backgrounds */
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.15);
+            pointer-events: none;
+        }
+
+        .popup {
+            width: 360px;
+            max-width: calc(100% - 40px);
+            padding: 36px;
+            border-radius: 16px;
+            text-align: center;
+            background: var(--popup-bg);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.16);
+            color: #fff;
+            transform: translateY(6px);
+            opacity: 0;
+            animation: fadeIn .45s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .popup h2 {
+            margin: 0 0 10px;
+            font-size: 1.8rem;
+            color: #ffffff;
+        }
+
+        .popup p {
+            margin: 0 0 18px;
+            font-size: 1rem;
+            color: #fff;
+            line-height: 1.4;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #ffffff;
+            color: var(--accent);
+            padding: 12px 22px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: transform .12s ease, box-shadow .12s ease;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+        }
+
+        .btn:hover,
+        .btn:focus {
+            transform: translateY(-3px);
+            outline: none;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+        }
+
+        .btn:active {
+            transform: translateY(-1px);
+        }
+
+        /* keyboard focus for accessibility */
+        .btn:focus-visible {
+            outline: 3px solid rgba(255,255,255,0.6);
+            outline-offset: 4px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="popup" role="dialog" aria-labelledby="welcomeTitle" aria-describedby="welcomeDesc">
+        <h2 id="welcomeTitle">WSG FAMMMM</h2>
+
+        <p id="welcomeDesc">
+            Kuch toh banane ke koshish ke hai...<br>
+            Virtual things, because we are not with each other.
+        </p>
+
+        <button type="button" class="btn" aria-label="Open the surprise" onclick="go()">CLICK CLICK !!</button>
+    </div>
+
+    <script>
+        function go() {
+            // make sure lmao.html is present at the repo root
+            window.location.href = "lmao.html";
+        }
+    </script>
+
+</body>
+</html>
