@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hey, come here 👀</title>
+
+    <!-- Oswald Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            /* ⭐ ADD YOUR BG IMAGE HERE ⭐ */
+            background-image: url("https://i.pinimg.com/1200x/bf/30/e3/bf30e31f123dd07ceb6b49e5ed80c9eb.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            font-family: "Oswald", sans-serif;
+        }
+
+        .popup {
+            background: #ebce4edd; /* little transparency so bg shows */
+            padding: 40px;
+            width: 350px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+        }
+
+        .popup h2 {
+            margin-bottom: 15px;
+            color: #ffffff;
+            font-size: 2rem;
+        }
+
+        .popup p {
+            color: #ffffff;
+            font-size: 1.2rem;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            background: #ffffff;
+            color: #daa90a;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 12px;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="popup">
+        <h2>WSG FAMMMM </h2>
+        <p>Kuch toh banane ke koshish ke hai...
+            Virtual things, because we are not with each other
+        <button class="btn" onclick="go()">CLICK CLICK !! </button>
+    </div>
+
+    <script>
+        function go() {
+            window.location.href = "lmao.html"; 
+        }
+    </script>
+
+</body>
+</html>
+

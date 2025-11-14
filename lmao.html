@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ANSHU DAY! <3 </title>
+
+    <!-- Google Font: Oswald -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-image: url("https://i.pinimg.com/1200x/9f/57/73/9f5773049a27986318e774c010c0d6c6.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            font-family: "Oswald", sans-serif;
+            text-align: center;
+            padding: 40px;
+        }
+
+        h1 {
+            font-size: 3.2rem;
+            color: #3494d4;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .msg {
+            font-size: 1.4rem;
+            margin-top: 20px;
+            color: #f57f7f;
+            font-weight: 300;
+        }
+
+        .btn {
+            background: #ceb941;
+            color: rgb(255, 255, 255);
+            border: none;
+            padding: 12px 25px;
+            font-size: 1.1rem;
+            border-radius: 20px;
+            cursor: pointer;
+            margin-top: 30px;
+            font-family: "Oswald", sans-serif;
+            font-weight: 400;
+        }
+
+        .btn:hover {
+            background: #3494d4;
+        }
+
+        #surprise {
+            display: none;
+            margin-top: 20px;
+            font-size: 1.3rem;
+            color: #fc94c5;
+            font-weight: 500;
+        }
+
+        /* IMAGE ROW */
+        .image-row {
+            margin-top: 35px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .image-row img {
+            width: 150px;
+            height: 150px;
+            border-radius: 15px;
+            object-fit: cover;
+            border: 3px solid white;
+            box-shadow: 0px 5px 12px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1> HAPPY BIRTHDAY TWINNY ! :3</h1>
+
+    <p class="msg">
+        A very happy birthday, anshu. I am so happy that you survived one more year and 
+        I am sure you will every year coming for you!! SO PROUD OF YOU!
+    </p>
+
+    <button class="btn" onclick="showSurprise()">Click for your *very* important message</button>
+
+    <p id="surprise"> !!!! You're doing amazing and i am so proud of you! I really hope that we celebrate bday together in the future. 
+        (That is us btw below this :3 you are chiikawa) </p>
+
+    <!-- TWO SQUARE IMAGES (ADD LINKS BELOW) -->
+    <div class="image-row">
+        <img src="https://i.pinimg.com/736x/42/f1/6d/42f16d72a3a2397d2b9f15b7b23efee9.jpg" alt="Cute Image 1">
+        <img src="https://i.pinimg.com/736x/8f/8d/fe/8f8dfe37432edab6bf513a7ee852800d.jpg" alt="Cute Image 2">
+    </div>
+
+    <script>
+        function showSurprise() {
+            document.getElementById("surprise").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
+
